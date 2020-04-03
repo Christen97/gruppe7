@@ -20,6 +20,11 @@
             <artifactId>javafx-fxml</artifactId>
             <version>13</version>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.11.jre6</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -36,7 +41,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.3</version>
                 <configuration>
-                    <mainClass>com.mycompany.guiexample1.App</mainClass>
+                    <mainClass>grp7.semproject.Presentation.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>

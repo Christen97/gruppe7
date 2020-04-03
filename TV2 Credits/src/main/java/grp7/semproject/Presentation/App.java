@@ -1,4 +1,4 @@
-package com.mycompany.guiexample1;
+package grp7.semproject.Presentation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
