@@ -1,4 +1,4 @@
-package com.mycompany.Domain;
+package grp7.semproject.Domain;
 
 public class RegDanmark extends User {
 

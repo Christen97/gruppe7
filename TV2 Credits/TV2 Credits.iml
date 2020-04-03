@@ -18,6 +18,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+        <jarDirectory url="jar://$MODULE_DIR$/bin/postgresql-42.2.11.jar!/" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:13" level="project" />
@@ -28,5 +29,6 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:13" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:13" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:13" level="project" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.11.jre6" level="project" />
   </component>
 </module>

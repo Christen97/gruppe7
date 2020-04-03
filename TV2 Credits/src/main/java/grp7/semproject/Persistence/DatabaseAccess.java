@@ -1,4 +1,4 @@
-package com.mycompany.Persistence;
+package grp7.semproject.Persistence;
 
 import java.sql.*;
 
