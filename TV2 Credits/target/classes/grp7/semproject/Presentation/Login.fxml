@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grp7.semproject.Presentation.LoginController">
+   <children>
+      <TextField fx:id="usernameField" layoutX="640.0" layoutY="328.0" />
+      <Label layoutX="570.0" layoutY="332.0" text="Username" />
+      <Label layoutX="570.0" layoutY="372.0" text="Password" />
+      <PasswordField fx:id="passwordField" layoutX="640.0" layoutY="368.0" />
+      <Button fx:id="loginButton" layoutX="689.0" layoutY="416.0" mnemonicParsing="false" onAction="#loginButtonPressed" text="Login" />
+   </children>
+</AnchorPane>
