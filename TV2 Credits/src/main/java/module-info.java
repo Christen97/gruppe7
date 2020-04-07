@@ -4,6 +4,6 @@ module com.mycompany.guiexample1 {
     requires java.sql;
     requires postgresql;
 
-    opens com.mycompany.Presentation to javafx.fxml;
-    exports com.mycompany.Presentation;
+    opens grp7.semproject.Presentation to javafx.fxml;
+    exports grp7.semproject.Presentation;
 }
