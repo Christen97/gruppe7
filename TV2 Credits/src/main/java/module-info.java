@@ -1,7 +1,9 @@
 module com.mycompany.guiexample1 {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires postgresql;
 
-    opens com.mycompany.guiexample1 to javafx.fxml;
-    exports com.mycompany.guiexample1;
+    opens grp7.semproject.Presentation to javafx.fxml;
+    exports grp7.semproject.Presentation;
 }
