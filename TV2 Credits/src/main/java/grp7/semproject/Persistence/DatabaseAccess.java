@@ -27,13 +27,16 @@ public class DatabaseAccess {
         }
     }
 
-    public void writeToDB() {         // Insert user into database (<<Example!>>)
+    // Creates a person in the DB
+    public void createPerson(String name, String address, String phone, String email) {
         connectToDB();
 
         try {
-            PreparedStatement insertStatement = connection.prepareStatement("INSERT INTO users (name, adresse) VALUES (?,?)");
-            insertStatement.setString(1, "Boss baby2");
-            insertStatement.setString(2, "Eldorado2"); //INSERT INTO users (name, cpr) VALUES ('John Doe','1234567890')
+            PreparedStatement insertStatement = connection.prepareStatement("INSERT INTO person (name, address, phone, email) VALUES (?,?,?,?)");
+            insertStatement.setString(1, name);
+            insertStatement.setString(2, address);
+            insertStatement.setString(3, phone);
+            insertStatement.setString(4, email);
             insertStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -42,23 +45,87 @@ public class DatabaseAccess {
         }
     }
 
-    public void readFromDB() {       // Query Database for users with CPR X (<<Example!>>)
+    // Creates a production in the DB, note that the date format is YYYY-MM-DD
+    public void createProduction(String name, String release_date, int program_type_fk, int producer_fk) {
+        connectToDB();
+
         try {
-            PreparedStatement queryStatement = connection.prepareStatement("SELECT * FROM users WHERE cpr = ?");
-            queryStatement.setString(1, "1234567890");
+            PreparedStatement insertStatement = connection.prepareStatement("INSERT INTO production (name, release_date, program_type_fk, producer_fk) VALUES (?,?,?,?)");
+            insertStatement.setString(1, name);
+            insertStatement.setString(2, release_date);
+            insertStatement.setInt(3, program_type_fk);
+            insertStatement.setInt(4, producer_fk);
+            insertStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            disconnectDB();
+        }
+    }
+
+    public void readFromDB(String table, String column, int integer) {       // Query Database for users with CPR X (<<Example!>>)
+        connectToDB();
+
+        try {
+            PreparedStatement queryStatement = connection.prepareStatement("SELECT * FROM " + table + " WHERE " + column + " = ?");
+           queryStatement.setInt(1, integer);
             ResultSet queryResultSet = queryStatement.executeQuery();
+
+            int i = 1;
+            int y = 0;
+            if (table == "person"){
+                y = 5;
+            }
+
+            String returnString = "";
 
             System.out.println("The following users matched the query:");
             while (queryResultSet.next()) {
-                System.out.println("The users name was "
-                        + queryResultSet.getString("name")
-                        + " and his CPR number was "
-                        + queryResultSet.getString("cpr"));
+                while (i < y) {
+                    returnString = returnString + queryResultSet.getString(i) + ",";
+                    i++;
+                }
             }
+            System.out.println(returnString);
+
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            disconnectDB();
         }
 
+    }
+
+    public void readFromDB(String table, String column, String string) {       // Query Database for users with CPR X (<<Example!>>)
+        connectToDB();
+
+        try {
+            PreparedStatement queryStatement = connection.prepareStatement("SELECT * FROM " + table + " WHERE " + column + " = ?");
+            queryStatement.setString(1, string);
+            ResultSet queryResultSet = queryStatement.executeQuery();
+
+            int i = 1;
+            int y = 0;
+            if (table == "person"){
+                y = 5;
+            }
+
+            String returnString = "";
+
+            System.out.println("The following users matched the query:");
+            while (queryResultSet.next()) {
+                while (i < y) {
+                    returnString = returnString + queryResultSet.getString(i) + ",";
+                    i++;
+                }
+            }
+            System.out.println(returnString);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            disconnectDB();
+        }
     }
 
     public void exportFromDB() {
