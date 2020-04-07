@@ -5,14 +5,17 @@
  */
 package grp7.semproject.Presentation;
 
-/**
- *
- * @author micha
- */
+import grp7.semproject.Persistence.DatabaseAccess;
+
 public class Main {
     
      public static void main(String[] args) {
-        App.load(args);
+        //App.load(args);
+
+    DatabaseAccess DBAcc = new DatabaseAccess();
+
+    DBAcc.writeToDB();
+
     }
      
      /* Enten så skal vi lave en "landing page" med buttons som: Søg, rediger brugere... osv
