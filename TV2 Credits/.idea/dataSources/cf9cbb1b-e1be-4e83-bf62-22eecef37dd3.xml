@@ -7876,12 +7876,12 @@
       <Owner>pqgenkao</Owner>
       <IntrospectionStateNumber>34187987</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|4537428|4537430|1
-sequence|table|4537439|4537441|1
-sequence|table|4537447|4537449|1
+      <Relations>sequence|table|4538068|4538070|1
 sequence|table|4537455|4537457|1
+sequence|table|4537447|4537449|1
+sequence|table|4537428|4537430|1
+sequence|table|4537439|4537441|1
 sequence|table|4537953|4537955|1
-sequence|table|4538068|4538070|1
 </Relations>
     </database>
     <database id="1969" parent="1" name="pquqszip">
