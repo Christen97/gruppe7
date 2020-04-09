@@ -35,11 +35,10 @@ public class SearchController {
 
     @FXML
     void loginButtonPressed(ActionEvent event) throws IOException {
-        if(LoginController.currentlyLoggedIn == ""){
+        if(LoginController.currentlyLoggedIn == null){
             App.setRoot("Login");
-        } else if (LoginController.currentlyLoggedIn != ""){
-            LoginController.currentlyLoggedIn = "";
-            System.out.println("logged out, so current login is: " + LoginController.currentlyLoggedIn);
+        } else {
+            LoginController.currentlyLoggedIn = null;
             loginButton.setText("Login");
         }
     }
@@ -64,7 +63,7 @@ public class SearchController {
         //Setting default value of dropdown menu
         dropdownMenu.setValue("Programmer");
         
-        if (LoginController.currentlyLoggedIn!=""){
+        if (LoginController.currentlyLoggedIn!=null){
             loginButton.setText("logout");
         } 
     }
