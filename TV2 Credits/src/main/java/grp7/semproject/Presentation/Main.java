@@ -16,7 +16,7 @@ public class Main {
 
     //DatabaseAccess DBAcc = new DatabaseAccess();
 
-   // DBAcc.readFromDB("person","name","lars");
+    //DBAcc.readFromDB("person","name","lars");
 
     }
      
