@@ -6,18 +6,20 @@
 package grp7.semproject.Presentation;
 
 import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 /**
- *
  * @author micha
  */
 public class SearchController {
-    
+
+    public Label loginLabel;
     @FXML
     private ChoiceBox<String> dropdownMenu;
 
@@ -35,11 +37,12 @@ public class SearchController {
 
     @FXML
     void loginButtonPressed(ActionEvent event) throws IOException {
-        if(LoginController.currentlyLoggedIn == null){
+        if (LoginController.currentlyLoggedIn == null) {
             App.setRoot("Login");
         } else {
             LoginController.currentlyLoggedIn = null;
             loginButton.setText("Login");
+            loginLabel.setText("");
         }
     }
 
@@ -54,18 +57,20 @@ public class SearchController {
         App.setRoot("Credits");
     }
 
-    public void initialize (){
+    public void initialize() {
         System.out.println("Initializing...");
-        
+
         //Adding menu items
-        dropdownMenu.getItems().addAll("Programmer","Serier","Film","Personer");     
-                
+        dropdownMenu.getItems().addAll("Programmer", "Serier", "Film", "Personer");
+
         //Setting default value of dropdown menu
         dropdownMenu.setValue("Programmer");
-        
-        if (LoginController.currentlyLoggedIn!=null){
+
+        if (LoginController.currentlyLoggedIn != null) {
             loginButton.setText("logout");
-        } 
+            loginLabel.setText("Logged in as: " + LoginController.currentlyLoggedIn.getName());
+
+        }
     }
-    
+
 }
