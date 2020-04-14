@@ -5,10 +5,6 @@
  */
 package grp7.semproject.Presentation;
 
-import grp7.semproject.Domain.Person;
-import grp7.semproject.Domain.Production;
-import grp7.semproject.Persistence.DatabaseAccess;
-
 public class Main {
     
      public static void main(String[] args) {

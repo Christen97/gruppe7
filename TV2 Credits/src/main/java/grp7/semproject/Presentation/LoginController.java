@@ -7,7 +7,7 @@ package grp7.semproject.Presentation;
 
 import java.io.IOException;
 
-import grp7.semproject.Domain.*;
+import grp7.semproject.Domain.UserTypes.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

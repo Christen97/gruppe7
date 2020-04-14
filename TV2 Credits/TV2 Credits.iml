@@ -22,13 +22,13 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:13" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:13" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:13" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:13" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:13" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:13" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:13" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:13" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:13" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:13" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:13" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:13" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.11.jre6" level="project" />
   </component>
 </module>

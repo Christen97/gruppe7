@@ -1,6 +1,6 @@
-package grp7.semproject.Domain;
+package grp7.semproject.Domain.UserTypes;
 
-public class CreditedPerson extends User{
+public class CreditedPerson extends User {
 
 
     private String role;

@@ -1,4 +1,4 @@
-package grp7.semproject.Domain;
+package grp7.semproject.Domain.UserTypes;
 
 public class RegDanmark extends User {
 
