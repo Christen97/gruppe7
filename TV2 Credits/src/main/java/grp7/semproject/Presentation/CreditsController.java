@@ -7,7 +7,7 @@ package grp7.semproject.Presentation;
 
 import java.io.IOException;
 
-import grp7.semproject.Domain.Person;
+import grp7.semproject.Domain.DTO.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
