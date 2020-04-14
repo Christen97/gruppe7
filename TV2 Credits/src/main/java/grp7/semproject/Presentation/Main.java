@@ -5,14 +5,16 @@
  */
 package grp7.semproject.Presentation;
 
+import grp7.semproject.Persistence.DatabaseAccess;
+
 public class Main {
     
      public static void main(String[] args) {
         App.load(args);
 
-    //DatabaseAccess DBAcc = new DatabaseAccess();
+    DatabaseAccess DBAcc = new DatabaseAccess();
 
-    //DBAcc.readFromDB("person","name","lars");
+    DBAcc.readFromDB("person","name","Lars");
 
     }
      
