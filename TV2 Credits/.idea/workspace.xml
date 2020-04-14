@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46377e77-0161-4cb0-a455-e00afc7b49fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf9cbb1b-e1be-4e83-bf62-22eecef37dd3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_13.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DatabaseAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="grp7.semproject.Presentation.App" />
       <module name="TV2 Credits" />
@@ -119,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -149,6 +154,7 @@
       <workItem from="1586258716895" duration="9979000" />
       <workItem from="1586434500751" duration="6038000" />
       <workItem from="1586449396145" duration="128000" />
+      <workItem from="1586792502254" duration="1156000" />
     </task>
     <servers />
   </component>

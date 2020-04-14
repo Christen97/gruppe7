@@ -30,17 +30,17 @@ public class LoginController {
     @FXML
     void loginButtonPressed(ActionEvent event) throws IOException {
         if (!usernameField.getText().isEmpty()) {
-            switch(usernameField.getText()) {
-                case "CreditedPerson":
+            switch(usernameField.getText().toLowerCase().trim()) {
+                case "creditedperson":
                     currentlyLoggedIn = new CreditedPerson(1, usernameField.getText(), passwordField.getText(), "CreditedPerson-Test");
                     break;
-                case "Producer":
+                case "producer":
                     currentlyLoggedIn = new Producer(1, usernameField.getText(), passwordField.getText(), "Producer-Test");
                     break;
-                case "RegDanmark":
+                case "regdanmark":
                     currentlyLoggedIn = new RegDanmark(1, usernameField.getText(), passwordField.getText(), "RegDanmark-Test");
                     break;
-                case "SystemAdmin":
+                case "systemadmin":
                     currentlyLoggedIn = new SystemAdmin(1, usernameField.getText(), passwordField.getText(), "SystemAdmin-Test");
                     break;
                 default:
