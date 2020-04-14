@@ -11,9 +11,9 @@ public class DatabaseAccess {
         try {
             DriverManager.registerDriver(new org.postgresql.Driver());
             connection = DriverManager.getConnection(
-                    "jdbc:postgresql://balarama.db.elephantsql.com:5432/pqgenkao",
-                    "pqgenkao",
-                    "byC8qoatCp0s0hmQljM1XhpOYo4KcE87");
+                    "jdbc:postgresql://165.22.75.234:5432/tv2_db",
+                    "application",
+                    "umvu3PJ6BPb%");
         } catch (SQLException e) {
             e.printStackTrace();
         }
