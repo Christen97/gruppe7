@@ -1,10 +1,10 @@
-package grp7.semproject.Domain;
+package grp7.semproject.Domain.UserTypes;
 
-public class CreditedPerson extends User{
+public class CreditedPerson extends User {
 
 
     private String role;
-    private String adress;
+    private String address;
     private String phoneNum;
     private String email;
 
@@ -17,8 +17,8 @@ public class CreditedPerson extends User{
         return role;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
     public String getPhoneNum() {

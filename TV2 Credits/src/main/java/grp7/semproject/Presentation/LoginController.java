@@ -7,10 +7,11 @@ package grp7.semproject.Presentation;
 
 import java.io.IOException;
 
-import grp7.semproject.Domain.*;
+import grp7.semproject.Domain.UserTypes.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -30,7 +31,7 @@ public class LoginController {
     @FXML
     void loginButtonPressed(ActionEvent event) throws IOException {
         if (!usernameField.getText().isEmpty()) {
-            switch(usernameField.getText().toLowerCase().trim()) {
+            switch (usernameField.getText().toLowerCase().trim()) {
                 case "creditedperson":
                     currentlyLoggedIn = new CreditedPerson(1, usernameField.getText(), passwordField.getText(), "CreditedPerson-Test");
                     break;
@@ -46,7 +47,7 @@ public class LoginController {
                 default:
                     System.out.println("Something wrong with that login...");
             }
-            System.out.println("Logged in as: " + "<" + currentlyLoggedIn.getName() +">");
+            System.out.println("Logged in as: " + "<" + currentlyLoggedIn.getName() + ">");
         } else {
             LoginController.currentlyLoggedIn = null;
         }
@@ -54,6 +55,6 @@ public class LoginController {
     }
 
     public void initialize() {
-
+        loginButton.isDefaultButton();
     }
 }

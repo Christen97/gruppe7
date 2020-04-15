@@ -1,6 +1,8 @@
-package grp7.semproject.Domain;
+package grp7.semproject.Domain.UserTypes;
 
-public class SystemAdmin extends User{
+import grp7.semproject.Domain.UserTypes.User;
+
+public class SystemAdmin extends User {
 
 
     public SystemAdmin(int userID, String username, String password, String name) {

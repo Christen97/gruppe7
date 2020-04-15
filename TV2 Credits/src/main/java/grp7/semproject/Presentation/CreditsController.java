@@ -7,7 +7,7 @@ package grp7.semproject.Presentation;
 
 import java.io.IOException;
 
-import grp7.semproject.Domain.Person;
+import grp7.semproject.Domain.DTO.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -33,6 +33,7 @@ public class CreditsController {
     public RadioButton castRadio;
     public RadioButton audioRadio;
     public RadioButton visualRadio;
+    public Label loginLabel;
     @FXML
     private Button backButton;
 
@@ -50,6 +51,9 @@ public class CreditsController {
         audioLV.setItems(audioList);
         visualList = FXCollections.observableArrayList();
         visualLV.setItems(visualList);
+        if (LoginController.currentlyLoggedIn != null) {
+            loginLabel.setText("Logged in as: " + LoginController.currentlyLoggedIn.getName());
+        }
     }
 
     public void btnHandler(ActionEvent actionEvent) {
@@ -67,33 +71,31 @@ public class CreditsController {
                 audioList.add(person);
             } else if (rGroup1.getSelectedToggle() == visualRadio) {
                 visualList.add(person);
-        }}
-
-            if (actionEvent.getSource() == removeCreditBtn) {
-                System.out.println("daa");
-
-                Person selectedPerson = (Person) audioLV.getSelectionModel().getSelectedItem();
-                if (selectedPerson != null){
-                    audioList.remove(selectedPerson);
-                }
-                else {
-                    selectedPerson = (Person) castLV.getSelectionModel().getSelectedItem();
-                }
-
-                if (selectedPerson != null){
-                    castList.remove(selectedPerson);
-                }
-                else {
-                    selectedPerson = (Person) visualLV.getSelectionModel().getSelectedItem();
-                }
-
-                if (selectedPerson != null){
-                    visualList.remove(selectedPerson);
-                }
-                else {
-                    System.out.println("wut?");
-                }
             }
+        }
+
+        if (actionEvent.getSource() == removeCreditBtn) {
+            System.out.println("daa");
+
+            Person selectedPerson = (Person) audioLV.getSelectionModel().getSelectedItem();
+            if (selectedPerson != null) {
+                audioList.remove(selectedPerson);
+            } else {
+                selectedPerson = (Person) castLV.getSelectionModel().getSelectedItem();
+            }
+
+            if (selectedPerson != null) {
+                castList.remove(selectedPerson);
+            } else {
+                selectedPerson = (Person) visualLV.getSelectionModel().getSelectedItem();
+            }
+
+            if (selectedPerson != null) {
+                visualList.remove(selectedPerson);
+            } else {
+                System.out.println("wut?");
+            }
+        }
         if (actionEvent.getSource() == editProductionIDBtn) {
             System.out.println("edit");
         }

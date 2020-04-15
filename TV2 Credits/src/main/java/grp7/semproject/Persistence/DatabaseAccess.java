@@ -68,26 +68,27 @@ public class DatabaseAccess {
 
         try {
             PreparedStatement queryStatement = connection.prepareStatement("SELECT * FROM " + table + " WHERE " + column + " = ?");
-           queryStatement.setInt(1, integer);
+            queryStatement.setInt(1, integer);
             ResultSet queryResultSet = queryStatement.executeQuery();
 
-            int i = 1;
-            int y = 0;
-            if (table == "person"){
-                y = 5;
-            }
+            int currentColumn = 1;
+            int columnTotal = queryResultSet.getMetaData().getColumnCount();
 
             String returnString = "";
 
             System.out.println("The following users matched the query:");
             while (queryResultSet.next()) {
-                while (i < y) {
-                    returnString = returnString + queryResultSet.getString(i) + ",";
-                    i++;
+                while (currentColumn <= columnTotal) {
+                    if (currentColumn == columnTotal) {
+                        returnString = returnString + queryResultSet.getString(currentColumn);
+                    } else {
+                        returnString = returnString + queryResultSet.getString(currentColumn) + ",";
+                    }
+                    currentColumn++;
+
                 }
             }
             System.out.println(returnString);
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -104,19 +105,21 @@ public class DatabaseAccess {
             queryStatement.setString(1, string);
             ResultSet queryResultSet = queryStatement.executeQuery();
 
-            int i = 1;
-            int y = 0;
-            if (table == "person"){
-                y = 5;
-            }
+            int currentColumn = 1;
+            int columnTotal = queryResultSet.getMetaData().getColumnCount();
 
             String returnString = "";
 
             System.out.println("The following users matched the query:");
             while (queryResultSet.next()) {
-                while (i < y) {
-                    returnString = returnString + queryResultSet.getString(i) + ",";
-                    i++;
+                while (currentColumn <= columnTotal) {
+                    if (currentColumn == columnTotal) {
+                        returnString = returnString + queryResultSet.getString(currentColumn);
+                    } else {
+                        returnString = returnString + queryResultSet.getString(currentColumn) + ",";
+                    }
+                    currentColumn++;
+
                 }
             }
             System.out.println(returnString);
