@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46377e77-0161-4cb0-a455-e00afc7b49fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Domain/Facades/LoginFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1d6d1a7b-1d18-4617-a874-d724d63c12a7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_13.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Domain/UserTypes/CreditedPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Domain/UserTypes/CreditedPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DBFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DBFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Persistence/DatabaseAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/CreditsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/CreditsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TV2 Credits.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TV2 Credits.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Domain/DomainFacade.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grp7/semproject/Presentation/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Credits.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Credits.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/grp7/semproject/Presentation/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Persistence/DatabaseAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Persistence/DatabaseAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Credits.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Credits.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/CreditsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/CreditsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grp7/semproject/Presentation/SearchController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/../../../../DM/HealthOS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -146,23 +136,25 @@
       <workItem from="1586852083374" duration="3673000" />
       <workItem from="1586862773413" duration="544000" />
       <workItem from="1586863432889" duration="5167000" />
+      <workItem from="1587167012462" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="215" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586863496670">
@@ -233,6 +225,10 @@
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="693" y="320" key="extract.method.dialog/0.36.1920.1044@0.36.1920.1044" timestamp="1586863190489" />
+    <state x="733" y="167" key="refactoring.ChangeSignatureDialog" timestamp="1587167270815">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="733" y="167" key="refactoring.ChangeSignatureDialog/0.0.2048.1112/2560.-823.1152.2008/-2560.0.2048.1112@0.0.2048.1112" timestamp="1587167270815" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1585904068578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

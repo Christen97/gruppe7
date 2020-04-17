@@ -7,11 +7,11 @@ package grp7.semproject.Presentation;
 
 import java.io.IOException;
 
-import grp7.semproject.Domain.UserTypes.*;
+import grp7.semproject.Domain.Facades.LoginFacade;
+import grp7.semproject.Domain.UserTypes.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -33,16 +33,16 @@ public class LoginController {
         if (!usernameField.getText().isEmpty()) {
             switch (usernameField.getText().toLowerCase().trim()) {
                 case "creditedperson":
-                    currentlyLoggedIn = new CreditedPerson(1, usernameField.getText(), passwordField.getText(), "CreditedPerson-Test");
+                    currentlyLoggedIn = LoginFacade.loginAsCreditedPerson(usernameField.getText(), passwordField.getText());
                     break;
                 case "producer":
-                    currentlyLoggedIn = new Producer(1, usernameField.getText(), passwordField.getText(), "Producer-Test");
+                    currentlyLoggedIn = LoginFacade.LoginAsProducer(usernameField.getText(), passwordField.getText());
                     break;
                 case "regdanmark":
-                    currentlyLoggedIn = new RegDanmark(1, usernameField.getText(), passwordField.getText(), "RegDanmark-Test");
+                    currentlyLoggedIn = LoginFacade.LoginAsRegDanmark(usernameField.getText(), passwordField.getText());
                     break;
                 case "systemadmin":
-                    currentlyLoggedIn = new SystemAdmin(1, usernameField.getText(), passwordField.getText(), "SystemAdmin-Test");
+                    currentlyLoggedIn = LoginFacade.loginAsSystemAdmin(usernameField.getText(), passwordField.getText());
                     break;
                 default:
                     System.out.println("Something wrong with that login...");
